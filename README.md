@@ -27,11 +27,13 @@ The `libgdx` and `ggez` versions are graphical applications rather than terminal
 
 - **libgdx (Java)**  
   Uses the [libGDX](https://libgdx.com/) framework (OpenGL ES)  
-  → [View implementation](./libgdx)
+  → [View implementation](./libgdx)  
+  → See Running section for execution details
 
 - **ggez (Rust)**  
   Uses the [ggez](https://ggez.rs/) framework (inspired by LÖVE)  
-  → [View implementation](./ggez)
+  → [View implementation](./ggez)  
+  → See Running section for execution details
 
 See the READMEs in their respective folders for more information.
 
@@ -71,7 +73,9 @@ At each step:
   Run the provided executable, or compile and run it locally
 
 - **Java**  
-  `java GameOfLife`
+  `java GameOfLife`  
+  
+  The `libgdx` version requires building and running the project using the libGDX framework (e.g., via Gradle or an IDE). See the `libgdx` folder README for details.
 
 - **JavaScript**  
   `node gameOfLife.js`
@@ -86,5 +90,9 @@ At each step:
 
   Or build/run with:
 
-  `cargo run --release`
+  `cargo run --release`  
   `cargo build --release`
+
+  The `ggez` version is a separate Rust project and can be run using Cargo from its directory:  
+
+  `cargo run`
